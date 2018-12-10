@@ -10,6 +10,7 @@ RUN apk -U add \
         alsa-lib-dev \
         libdaemon-dev \
         popt-dev \
+        pulseaudio-dev \
         libressl-dev \
         soxr-dev \
         avahi-dev \
@@ -23,6 +24,7 @@ RUN apk -U add \
  && ./configure \
         --with-alsa \
         --with-pipe \
+        --with-pa \
         --with-avahi \
         --with-ssl=openssl \
         --with-soxr \
@@ -41,6 +43,7 @@ RUN apk -U add \
         libdaemon-dev \
         popt-dev \
         libressl-dev \
+        pulseaudio-dev \
         soxr-dev \
         avahi-dev \
         libconfig-dev \
@@ -50,6 +53,7 @@ RUN apk -U add \
         libdaemon \
         popt \
         libressl \
+        pulseaudio \
         soxr \
         avahi \
         libconfig \
