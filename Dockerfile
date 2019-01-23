@@ -18,7 +18,7 @@ RUN apk -U add \
         mosquitto-dev \
 
  && cd /root \
- && git clone https://github.com/mikebrady/shairport-sync.git -b development \
+ && git clone https://github.com/mikebrady/shairport-sync.git -b unstable \
  && cd shairport-sync \
 
  && autoreconf -i -f \
