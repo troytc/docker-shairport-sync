@@ -16,9 +16,10 @@ RUN apk -U add \
         avahi-dev \
         libconfig-dev \
         mosquitto-dev \
+        xmltoman \
 
  && cd /root \
- && git clone https://github.com/mikebrady/shairport-sync.git -b unstable \
+ && git clone https://github.com/mikebrady/shairport-sync.git -b development \
  && cd shairport-sync \
 
  && autoreconf -i -f \
