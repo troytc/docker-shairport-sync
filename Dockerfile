@@ -15,6 +15,7 @@ RUN apk -U add \
         soxr-dev \
         avahi-dev \
         libconfig-dev \
+        mosquitto-dev \
 
  && cd /root \
  && git clone https://github.com/mikebrady/shairport-sync.git -b development \
@@ -29,6 +30,7 @@ RUN apk -U add \
         --with-ssl=openssl \
         --with-soxr \
         --with-metadata \
+        --with-mqtt-client \
  && make \
  && make install \
 
@@ -47,6 +49,7 @@ RUN apk -U add \
         soxr-dev \
         avahi-dev \
         libconfig-dev \
+        mosquitto-dev \
  && apk add \
         dbus \
         alsa-lib \
@@ -57,6 +60,7 @@ RUN apk -U add \
         soxr \
         avahi \
         libconfig \
+        mosquitto \
  && rm -rf \
         /etc/ssl \
         /var/cache/apk/* \
